@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+// next.config.ts
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    appDir: true, // This enables the app directory and the App Router
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+export default nextConfig
